@@ -4,6 +4,18 @@ import ConsultationModal from "./ConsultationModal";
 
 const Hero = () => {
   const [isModalOpen, setIsModalOpen] = React.useState(false);
+  const triggerButtonRef = React.useRef<HTMLButtonElement>(null);
+
+  const handleOpenModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+    setTimeout(() => {
+      triggerButtonRef.current?.focus();
+    }, 100);
+  };
 
   const companyLogos = [
     { name: "Gartner", rating: "5.0", stars: 5 },
@@ -62,7 +74,8 @@ const Hero = () => {
 
       {/* Promotional Banner */}
       <button
-        onClick={() => setIsModalOpen(true)}
+        ref={triggerButtonRef}
+        onClick={handleOpenModal}
         className="fixed right-0 top-1/2 transform -translate-y-1/2 bg-blue-500 hover:bg-blue-600 text-white p-4 rounded-l-lg shadow-lg z-30 hidden lg:block transition-colors duration-200"
       >
         <div className="text-center">
@@ -138,7 +151,7 @@ const Hero = () => {
 
         {/* Mobile Promotional Banner */}
         <button
-          onClick={() => setIsModalOpen(true)}
+          onClick={handleOpenModal}
           className="lg:hidden fixed bottom-4 right-4 bg-blue-500 hover:bg-blue-600 text-white p-3 rounded-lg shadow-lg z-30 transition-colors duration-200"
         >
           <div className="text-xs font-bold">10% Off First Invoice!</div>
@@ -146,10 +159,7 @@ const Hero = () => {
       </div>
 
       {/* Consultation Modal */}
-      <ConsultationModal
-        isOpen={isModalOpen}
-        onClose={() => setIsModalOpen(false)}
-      />
+      <ConsultationModal isOpen={isModalOpen} onClose={handleCloseModal} />
     </section>
   );
 };

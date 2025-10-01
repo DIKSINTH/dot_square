@@ -22,24 +22,17 @@ const ConsultationModal: React.FC<ConsultationModalProps> = ({
 
   const overlayRef = useRef<HTMLDivElement | null>(null);
   const firstInputRef = useRef<HTMLInputElement | null>(null);
-  const prevFocusedRef = useRef<Element | null>(null);
 
   useEffect(() => {
     if (isOpen) {
-      // save previously focused element (hero will additionally manage focus restore)
-      prevFocusedRef.current = document.activeElement;
-
-      // Focus the first input for accessibility
       setTimeout(() => firstInputRef.current?.focus(), 50);
 
-      // close on Escape
       const onKey = (e: KeyboardEvent) => {
         if (e.key === "Escape") onClose();
       };
       window.addEventListener("keydown", onKey);
       return () => window.removeEventListener("keydown", onKey);
     }
-    // no need to restore focus here because parent (Hero) restores it to the trigger
   }, [isOpen, onClose]);
 
   if (!isOpen) return null;
@@ -59,7 +52,6 @@ const ConsultationModal: React.FC<ConsultationModalProps> = ({
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log("Form submitted:", formData);
-    // close and let parent handle scrolling/focus restore
     onClose();
   };
 
@@ -90,7 +82,7 @@ const ConsultationModal: React.FC<ConsultationModalProps> = ({
           </div>
 
           <div className="flex items-center space-x-2">
-            {/* Back to page button - will call onClose and parent will restore focus/scroll */}
+            {/* Back to page button */}
             <button
               onClick={onClose}
               className="px-3 py-2 text-sm rounded hover:bg-gray-100 transition"
@@ -98,6 +90,7 @@ const ConsultationModal: React.FC<ConsultationModalProps> = ({
               ← Back to page
             </button>
 
+            {/* X Close button */}
             <button
               onClick={onClose}
               className="p-2 hover:bg-gray-100 rounded-full transition-colors"

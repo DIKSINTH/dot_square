@@ -3,6 +3,10 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import PartnerLogoCarousel from "./components/PartnerLogoCarousel.tsx";
 import DrivingSuccess from "./components/DrivingSuccess";
+import "./components/ServicesSection.tsx";
+import ServicesSection from "./components/ServicesSection.tsx";
+import AboutSection from "./components/AboutSection.tsx";
+// import CodeToSuccessSection from "./components/CodeToSuccessSection.tsx";
 
 function App() {
   return (
@@ -11,6 +15,9 @@ function App() {
       <Hero />
       <PartnerLogoCarousel />
       <DrivingSuccess />
+      <ServicesSection />
+      {/* <CodeToSuccessSection /> */}
+      <AboutSection />
     </div>
   );
 }
