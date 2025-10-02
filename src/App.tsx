@@ -6,7 +6,8 @@ import DrivingSuccess from "./components/DrivingSuccess";
 import "./components/ServicesSection.tsx";
 import ServicesSection from "./components/ServicesSection.tsx";
 import AboutSection from "./components/AboutSection.tsx";
-// import CodeToSuccessSection from "./components/CodeToSuccessSection.tsx";
+import AISolutionsSection from "./components/AISolutionsSection.tsx";
+import CodeToSuccessSection from "./components/CodeToSuccessSection.tsx";
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
       <PartnerLogoCarousel />
       <DrivingSuccess />
       <ServicesSection />
-      {/* <CodeToSuccessSection /> */}
+      <AISolutionsSection />
+      <CodeToSuccessSection />
       <AboutSection />
     </div>
   );

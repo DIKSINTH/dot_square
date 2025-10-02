@@ -17,7 +17,7 @@ export default function AboutSection() {
           {/* Left Column - About Us */}
           <div className="space-y-8">
             <div className="space-y-4">
-              <h3 className="text-orange-500 text-sm font-semibold tracking-wider uppercase">
+              <h3 className="text-blue-500 text-sm font-semibold tracking-wider uppercase">
                 ABOUT US
               </h3>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">
@@ -36,7 +36,7 @@ export default function AboutSection() {
               <div className="space-y-2">
                 <div className="flex items-center gap-3">
                   <Users className="w-8 h-8 text-white" strokeWidth={1.5} />
-                  <span className="text-4xl sm:text-5xl font-bold text-orange-500">
+                  <span className="text-4xl sm:text-5xl font-bold text-blue-500">
                     1,000+
                   </span>
                 </div>
@@ -49,7 +49,7 @@ export default function AboutSection() {
               <div className="space-y-2">
                 <div className="flex items-center gap-3">
                   <Star className="w-8 h-8 text-white" strokeWidth={1.5} />
-                  <span className="text-4xl sm:text-5xl font-bold text-orange-500">
+                  <span className="text-4xl sm:text-5xl font-bold text-blue-500">
                     15,000+
                   </span>
                 </div>
@@ -65,7 +65,7 @@ export default function AboutSection() {
                     className="w-8 h-8 text-white"
                     strokeWidth={1.5}
                   />
-                  <span className="text-4xl sm:text-5xl font-bold text-orange-500">
+                  <span className="text-4xl sm:text-5xl font-bold text-blue-500">
                     27,000+
                   </span>
                 </div>
@@ -78,7 +78,7 @@ export default function AboutSection() {
               <div className="space-y-2">
                 <div className="flex items-center gap-3">
                   <Trophy className="w-8 h-8 text-white" strokeWidth={1.5} />
-                  <span className="text-4xl sm:text-5xl font-bold text-orange-500">
+                  <span className="text-4xl sm:text-5xl font-bold text-blue-500">
                     95%
                   </span>
                 </div>
@@ -91,7 +91,7 @@ export default function AboutSection() {
               <div className="space-y-2">
                 <div className="flex items-center gap-3">
                   <Lightbulb className="w-8 h-8 text-white" strokeWidth={1.5} />
-                  <span className="text-4xl sm:text-5xl font-bold text-orange-500">
+                  <span className="text-4xl sm:text-5xl font-bold text-blue-500">
                     23+
                   </span>
                 </div>
@@ -104,7 +104,7 @@ export default function AboutSection() {
               <div className="space-y-2">
                 <div className="flex items-center gap-3">
                   <Globe className="w-8 h-8 text-white" strokeWidth={1.5} />
-                  <span className="text-4xl sm:text-5xl font-bold text-orange-500">
+                  <span className="text-4xl sm:text-5xl font-bold text-blue-500">
                     6+
                   </span>
                 </div>
@@ -118,13 +118,13 @@ export default function AboutSection() {
           {/* Right Column - TechSquares */}
           <div className="space-y-8">
             <div className="space-y-4">
-              <h3 className="text-orange-500 text-sm font-semibold tracking-wider uppercase">
+              <h3 className="text-blue-500 text-sm font-semibold tracking-wider uppercase">
                 TECHSQUARES
               </h3>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">
                 Unveiling the Digital Landscape
               </h2>
-              <button className="flex items-center gap-2 text-orange-500 hover:text-orange-400 transition-colors text-lg font-semibold group">
+              <button className="flex items-center gap-2 text-blue-500 hover:text-blue-400 transition-colors text-lg font-semibold group">
                 <BookOpen className="w-5 h-5" />
                 <span>Read Now</span>
               </button>
@@ -139,7 +139,7 @@ export default function AboutSection() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
               <div className="absolute top-4 left-4 right-4 flex justify-between items-start">
-                <div className="text-orange-500 font-bold text-lg">
+                <div className="text-blue-500 font-bold text-lg">
                   TECHSQUARES
                 </div>
                 <div className="text-white font-bold text-5xl sm:text-6xl lg:text-7xl">
