@@ -2,13 +2,41 @@ import React from "react";
 
 // NOTE: Replace these with your actual logo images/components
 const LOGOS = [
-  { id: 1, src: "/path-to-your/logo-just-eat.svg", alt: "Just Eat" },
-  { id: 2, src: "/path-to-your/logo-allurion.svg", alt: "Allurion" },
-  { id: 3, src: "/path-to-your/logo-comodo.svg", alt: "Comodo" },
-  { id: 4, src: "/path-to-your/logo-fridays.svg", alt: "Fridays" },
-  { id: 5, src: "/path-to-your/logo-dreams.svg", alt: "Dreams" },
-  { id: 6, src: "/path-to-your/logo-fujitsu.svg", alt: "Fujitsu" },
-  { id: 7, src: "/path-to-your/logo-nhs.svg", alt: "NHS" },
+  {
+    id: 1,
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/joomla/joomla-original.svg",
+    alt: "Just Eat",
+  },
+  {
+    id: 2,
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/joomla/joomla-original.svg",
+    alt: "Allurion",
+  },
+  {
+    id: 3,
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/joomla/joomla-original.svg",
+    alt: "Comodo",
+  },
+  {
+    id: 4,
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/joomla/joomla-original.svg",
+    alt: "Fridays",
+  },
+  {
+    id: 5,
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/joomla/joomla-original.svg",
+    alt: "Dreams",
+  },
+  {
+    id: 6,
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/joomla/joomla-original.svg",
+    alt: "Fujitsu",
+  },
+  {
+    id: 7,
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/joomla/joomla-original.svg",
+    alt: "NHS",
+  },
   { id: 8, src: "/path-to-your/logo-money.svg", alt: "Money" },
   // Add more logos to fill space and ensure smooth loop
 ];

@@ -70,7 +70,7 @@ const ContactSection: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-16">
           {/* --- Left Column: Text Content --- */}
           <div className="text-white mb-12 lg:mb-0">
-            <p className="text-sm uppercase text-orange-500 tracking-[0.2em] font-semibold mb-4">
+            <p className="text-sm uppercase text-blue-500 tracking-[0.2em] font-semibold mb-4">
               CONTACT US
             </p>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight">
@@ -136,7 +136,7 @@ const ContactSection: React.FC = () => {
                 <p className="text-sm text-gray-400">Or Reach Out To Us At</p>
                 <a
                   href="mailto:office@dotsquares.com"
-                  className="text-white text-xl font-bold hover:text-orange-500 transition-colors duration-200"
+                  className="text-white text-xl font-bold hover:text-blue-500 transition-colors duration-200"
                 >
                   office@dotsquares.com
                 </a>

@@ -40,7 +40,7 @@ const PartnersSection = () => {
   return (
     <section className="w-full bg-white py-16 px-6 md:px-12 lg:px-20 text-center">
       {/* Small header */}
-      <p className="text-orange-500 font-semibold uppercase tracking-wide">
+      <p className="text-blue-500 font-semibold uppercase tracking-wide">
         Achievements
       </p>
 
