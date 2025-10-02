@@ -210,7 +210,7 @@ const ScrollingRow = ({
 const TechnologyStack = () => {
   return (
     <section className="bg-black py-16 px-4 sm:px-6 lg:px-8 overflow-hidden">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-100vw mx-auto">
         <div className="text-center mb-12">
           <p className="text-orange-500 text-sm font-semibold tracking-wide uppercase mb-3">
             TECHNOLOGIES

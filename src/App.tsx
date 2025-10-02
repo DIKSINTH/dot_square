@@ -9,6 +9,13 @@ import AboutSection from "./components/AboutSection.tsx";
 import AISolutionsSection from "./components/AISolutionsSection.tsx";
 import CodeToSuccessSection from "./components/CodeToSuccessSection.tsx";
 import TechnologyStack from "./components/TechnologyStack.tsx";
+import PartnersSection from "./components/PartnersSection.tsx";
+import SolutionsSection from "./components/SolutionsSection.tsx";
+import CaseStudiesSection from "./components/CaseStudiesSection.tsx";
+import ContactSection from "./components/ContactSection.tsx";
+import LatestArticlesSection from "./components/LatestArticlesSection.tsx";
+import FAQSection from "./components/FAQSection.tsx";
+import Footer from "./components/Footer.tsx";
 
 function App() {
   return (
@@ -21,7 +28,14 @@ function App() {
       <AISolutionsSection />
       <CodeToSuccessSection />
       <AboutSection />
+      <PartnersSection />
       <TechnologyStack />
+      <SolutionsSection />
+      <CaseStudiesSection />
+      <ContactSection />
+      <LatestArticlesSection />
+      <FAQSection />
+      <Footer />
     </div>
   );
 }
