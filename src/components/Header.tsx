@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import {
   ChevronDown,
   Menu,
@@ -283,20 +284,6 @@ const Header = () => {
           <div className="flex justify-end items-center h-10 text-xs sm:text-sm">
             <div className="flex flex-wrap items-center gap-3 sm:gap-6">
               <a
-                href="tel:+442080901819"
-                className="hover:text-blue-500 transition-colors"
-              >
-                <span className="text-blue-500 font-semibold">UK</span> +44 208
-                0901819
-              </a>
-              <a
-                href="tel:+61395115598"
-                className="hover:text-blue-500 transition-colors hidden sm:inline"
-              >
-                <span className="text-blue-500 font-semibold">AUS</span> +61 3
-                9511 5598
-              </a>
-              <a
                 href="tel:+13015639488"
                 className="hover:text-blue-500 transition-colors hidden md:inline"
               >
@@ -343,7 +330,7 @@ const Header = () => {
           <nav className="hidden lg:flex items-center space-x-1 xl:space-x-2">
             <div className="relative group">
               <button
-                className="flex items-center gap-1 px-3 py-2 text-sm hover:text-orange-500 transition-colors"
+                className="flex items-center gap-1 px-3 py-2 text-sm hover:text-blue-500 transition-colors"
                 onMouseEnter={() => setActiveDropdown("services")}
               >
                 Services <ChevronDown className="w-4 h-4" />
@@ -365,12 +352,14 @@ const Header = () => {
                         <ul className="space-y-2">
                           {servicesMenu.items.map((item, idx) => (
                             <li key={idx}>
-                              <a
-                                href="#"
+                              <Link
+                                to={
+                                  "/" + item.toLowerCase().replace(/\s+/g, "")
+                                }
                                 className="text-sm hover:text-blue-500 transition-colors block"
                               >
                                 {item}
-                              </a>
+                              </Link>
                             </li>
                           ))}
                         </ul>

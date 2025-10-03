@@ -1,22 +1,7 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
-import ConsultationModal from "./ConsultationModal";
 
 const Hero = () => {
-  const [isModalOpen, setIsModalOpen] = React.useState(false);
-  const triggerButtonRef = React.useRef<HTMLButtonElement>(null);
-
-  const handleOpenModal = () => {
-    setIsModalOpen(true);
-  };
-
-  const handleCloseModal = () => {
-    setIsModalOpen(false);
-    setTimeout(() => {
-      triggerButtonRef.current?.focus();
-    }, 100);
-  };
-
   const companyLogos = [
     { name: "Gartner", rating: "5.0", stars: 5 },
     { name: "Google", rating: "4.6", stars: 4.5 },
@@ -71,23 +56,6 @@ const Hero = () => {
             "url('https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop')",
         }}
       ></div>
-
-      {/* Promotional Banner */}
-      <button
-        ref={triggerButtonRef}
-        onClick={handleOpenModal}
-        className="fixed right-0 top-1/2 transform -translate-y-1/2 bg-blue-500 hover:bg-blue-600 text-white p-4 rounded-l-lg shadow-lg z-30 hidden lg:block transition-colors duration-200"
-      >
-        <div className="text-center">
-          <div className="text-2xl mb-2">💡</div>
-          <div className="font-bold">Unlock</div>
-          <div className="font-bold">Savings —</div>
-          <div className="text-sm">10% Off On</div>
-          <div className="text-sm">First</div>
-          <div className="text-sm">Invoice</div>
-          <ArrowRight className="w-4 h-4 mx-auto mt-2" />
-        </div>
-      </button>
 
       <div className="relative z-10 container mx-auto px-6 py-12 lg:py-20">
         {/* Company Logos */}
@@ -148,18 +116,7 @@ const Hero = () => {
             <ArrowRight className="w-5 h-5" />
           </button>
         </div>
-
-        {/* Mobile Promotional Banner */}
-        <button
-          onClick={handleOpenModal}
-          className="lg:hidden fixed bottom-4 right-4 bg-blue-500 hover:bg-blue-600 text-white p-3 rounded-lg shadow-lg z-30 transition-colors duration-200"
-        >
-          <div className="text-xs font-bold">10% Off First Invoice!</div>
-        </button>
       </div>
-
-      {/* Consultation Modal */}
-      <ConsultationModal isOpen={isModalOpen} onClose={handleCloseModal} />
     </section>
   );
 };
