@@ -1,18 +1,19 @@
 import React from "react";
 import Hero from "../components/Hero";
-import PartnerLogoCarousel from "../components/PartnerLogoCarousel.tsx";
+import PartnerLogoCarousel from "../components/PartnerLogoCarousel";
 import DrivingSuccess from "../components/DrivingSuccess";
-import ServicesSection from "../components/ServicesSection.tsx";
-import AboutSection from "../components/AboutSection.tsx";
-import AISolutionsSection from "../components/AISolutionsSection.tsx";
-import CodeToSuccessSection from "../components/CodeToSuccessSection.tsx";
-import TechnologyStack from "../components/TechnologyStack.tsx";
-import PartnersSection from "../components/PartnersSection.tsx";
-import SolutionsSection from "../components/SolutionsSection.tsx";
-import CaseStudiesSection from "../components/CaseStudiesSection.tsx";
-import ContactSection from "../components/ContactSection.tsx";
-import LatestArticlesSection from "../components/LatestArticlesSection.tsx";
-import FAQSection from "../components/FAQSection.tsx";
+import ServicesSection from "../components/ServicesSection";
+import AboutSection from "../components/AboutSection";
+import AISolutionsSection from "../components/AISolutionsSection";
+import CodeToSuccessSection from "../components/CodeToSuccessSection";
+import TechnologyStack from "../components/TechnologyStack";
+import PartnersSection from "../components/PartnersSection";
+import SolutionsSection from "../components/SolutionsSection";
+import CaseStudiesSection from "../components/CaseStudiesSection";
+import ContactSection from "../components/ContactSection";
+import LatestArticlesSection from "../components/LatestArticlesSection";
+import FAQSection from "../components/FAQSection";
+import IndustrySlider from "../components/IndustrySlider"; // Remove .jsx or .tsx
 
 const Home: React.FC = () => {
   return (
@@ -26,6 +27,7 @@ const Home: React.FC = () => {
       <AboutSection />
       <PartnersSection />
       <TechnologyStack />
+      <IndustrySlider />
       <SolutionsSection />
       <CaseStudiesSection />
       <ContactSection />
