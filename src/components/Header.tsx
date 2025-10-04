@@ -374,12 +374,14 @@ const Header = () => {
                         <ul className="space-y-2">
                           {enterpriseMenu.items.map((item, idx) => (
                             <li key={idx}>
-                              <a
-                                href="#"
+                              <Link
+                                to={
+                                  "/" + item.toLowerCase().replace(/\s+/g, "")
+                                }
                                 className="text-sm hover:text-blue-500 transition-colors block"
                               >
                                 {item}
-                              </a>
+                              </Link>
                             </li>
                           ))}
                         </ul>
@@ -394,12 +396,14 @@ const Header = () => {
                         <ul className="space-y-2">
                           {supportMenu.items.map((item, idx) => (
                             <li key={idx}>
-                              <a
-                                href="#"
+                              <Link
+                                to={
+                                  "/" + item.toLowerCase().replace(/\s+/g, "")
+                                }
                                 className="text-sm hover:text-blue-500 transition-colors block"
                               >
                                 {item}
-                              </a>
+                              </Link>
                             </li>
                           ))}
                         </ul>
@@ -414,12 +418,14 @@ const Header = () => {
                         <ul className="space-y-2">
                           {marketingMenu.items.map((item, idx) => (
                             <li key={idx}>
-                              <a
-                                href="#"
+                              <Link
+                                to={
+                                  "/" + item.toLowerCase().replace(/\s+/g, "")
+                                }
                                 className="text-sm hover:text-blue-500 transition-colors block"
                               >
                                 {item}
-                              </a>
+                              </Link>
                             </li>
                           ))}
                         </ul>
@@ -446,12 +452,12 @@ const Header = () => {
                     <ul className="space-y-3">
                       {cloudMenu.map((item, idx) => (
                         <li key={idx}>
-                          <a
-                            href="#"
+                          <Link
+                            to={"/" + item.toLowerCase().replace(/\s+/g, "")}
                             className="text-sm hover:text-blue-500 transition-colors block"
                           >
                             {item}
-                          </a>
+                          </Link>
                         </li>
                       ))}
                     </ul>
@@ -484,12 +490,14 @@ const Header = () => {
                         <ul className="space-y-2">
                           {dataAiMenu.data.items.map((item, idx) => (
                             <li key={idx}>
-                              <a
-                                href="#"
+                              <Link
+                                to={
+                                  "/" + item.toLowerCase().replace(/\s+/g, "")
+                                }
                                 className="text-sm hover:text-blue-500 transition-colors block"
                               >
                                 {item}
-                              </a>
+                              </Link>
                             </li>
                           ))}
                         </ul>
@@ -504,12 +512,14 @@ const Header = () => {
                         <ul className="space-y-2">
                           {dataAiMenu.ai.items.map((item, idx) => (
                             <li key={idx}>
-                              <a
-                                href="#"
+                              <Link
+                                to={
+                                  "/" + item.toLowerCase().replace(/\s+/g, "")
+                                }
                                 className="text-sm hover:text-blue-500 transition-colors block"
                               >
                                 {item}
-                              </a>
+                              </Link>
                             </li>
                           ))}
                         </ul>
@@ -519,7 +529,6 @@ const Header = () => {
                 </div>
               )}
             </div>
-
             <div className="relative group">
               <button
                 className="flex items-center gap-1 px-3 py-2 text-sm hover:text-blue-500 transition-colors"
@@ -536,12 +545,12 @@ const Header = () => {
                     <ul className="space-y-3">
                       {securityMenu.map((item, idx) => (
                         <li key={idx}>
-                          <a
-                            href="#"
+                          <Link
+                            to={"/" + item.toLowerCase().replace(/\s+/g, "")}
                             className="text-sm hover:text-blue-500 transition-colors block"
                           >
                             {item}
-                          </a>
+                          </Link>
                         </li>
                       ))}
                     </ul>
@@ -567,14 +576,17 @@ const Header = () => {
                       {industriesMenu.map((industry, idx) => {
                         const Icon = industry.icon;
                         return (
-                          <a
+                          <Link
                             key={idx}
-                            href="#"
+                            to={
+                              "/" +
+                              industry.name.toLowerCase().replace(/\s+/g, "")
+                            }
                             className="flex items-center gap-2 px-3 py-2 hover:text-blue-500 transition-colors group"
                           >
                             <Icon className="w-5 h-5 flex-shrink-0" />
                             <span className="text-sm">{industry.name}</span>
-                          </a>
+                          </Link>
                         );
                       })}
                     </div>
@@ -615,12 +627,14 @@ const Header = () => {
                           {technologiesMenu.mobileApps.items.map(
                             (item, idx) => (
                               <li key={idx}>
-                                <a
-                                  href="#"
+                                <Link
+                                  to={
+                                    "/" + item.toLowerCase().replace(/\s+/g, "")
+                                  }
                                   className="text-sm hover:text-blue-500 transition-colors block"
                                 >
                                   {item}
-                                </a>
+                                </Link>
                               </li>
                             )
                           )}
@@ -636,12 +650,14 @@ const Header = () => {
                         <ul className="space-y-2">
                           {technologiesMenu.ecommerce.items.map((item, idx) => (
                             <li key={idx}>
-                              <a
-                                href="#"
+                              <Link
+                                to={
+                                  "/" + item.toLowerCase().replace(/\s+/g, "")
+                                }
                                 className="text-sm hover:text-blue-500 transition-colors block"
                               >
                                 {item}
-                              </a>
+                              </Link>
                             </li>
                           ))}
                         </ul>
@@ -656,12 +672,14 @@ const Header = () => {
                         <ul className="space-y-2">
                           {technologiesMenu.cms.items.map((item, idx) => (
                             <li key={idx}>
-                              <a
-                                href="#"
+                              <Link
+                                to={
+                                  "/" + item.toLowerCase().replace(/\s+/g, "")
+                                }
                                 className="text-sm hover:text-blue-500 transition-colors block"
                               >
                                 {item}
-                              </a>
+                              </Link>
                             </li>
                           ))}
                         </ul>
@@ -677,12 +695,14 @@ const Header = () => {
                           {technologiesMenu.customDevelopment.items.map(
                             (item, idx) => (
                               <li key={idx}>
-                                <a
-                                  href="#"
+                                <Link
+                                  to={
+                                    "/" + item.toLowerCase().replace(/\s+/g, "")
+                                  }
                                   className="text-sm hover:text-blue-500 transition-colors block"
                                 >
                                   {item}
-                                </a>
+                                </Link>
                               </li>
                             )
                           )}
@@ -698,12 +718,14 @@ const Header = () => {
                         <ul className="space-y-2">
                           {technologiesMenu.fullStack.items.map((item, idx) => (
                             <li key={idx}>
-                              <a
-                                href="#"
+                              <Link
+                                to={
+                                  "/" + item.toLowerCase().replace(/\s+/g, "")
+                                }
                                 className="text-sm hover:text-blue-500 transition-colors block"
                               >
                                 {item}
-                              </a>
+                              </Link>
                             </li>
                           ))}
                         </ul>
@@ -718,12 +740,14 @@ const Header = () => {
                         <ul className="space-y-2">
                           {technologiesMenu.crm.items.map((item, idx) => (
                             <li key={idx}>
-                              <a
-                                href="#"
+                              <Link
+                                to={
+                                  "/" + item.toLowerCase().replace(/\s+/g, "")
+                                }
                                 className="text-sm hover:text-blue-500 transition-colors block"
                               >
                                 {item}
-                              </a>
+                              </Link>
                             </li>
                           ))}
                         </ul>
@@ -738,12 +762,14 @@ const Header = () => {
                         <ul className="space-y-2">
                           {technologiesMenu.games.items.map((item, idx) => (
                             <li key={idx}>
-                              <a
-                                href="#"
+                              <Link
+                                to={
+                                  "/" + item.toLowerCase().replace(/\s+/g, "")
+                                }
                                 className="text-sm hover:text-blue-500 transition-colors block"
                               >
                                 {item}
-                              </a>
+                              </Link>
                             </li>
                           ))}
                         </ul>
@@ -758,12 +784,14 @@ const Header = () => {
                         <ul className="space-y-2">
                           {technologiesMenu.cloud.items.map((item, idx) => (
                             <li key={idx}>
-                              <a
-                                href="#"
+                              <Link
+                                to={
+                                  "/" + item.toLowerCase().replace(/\s+/g, "")
+                                }
                                 className="text-sm hover:text-blue-500 transition-colors block"
                               >
                                 {item}
-                              </a>
+                              </Link>
                             </li>
                           ))}
                         </ul>
@@ -778,12 +806,14 @@ const Header = () => {
                         <ul className="space-y-2">
                           {technologiesMenu.other.items.map((item, idx) => (
                             <li key={idx}>
-                              <a
-                                href="#"
+                              <Link
+                                to={
+                                  "/" + item.toLowerCase().replace(/\s+/g, "")
+                                }
                                 className="text-sm hover:text-blue-500 transition-colors block"
                               >
                                 {item}
-                              </a>
+                              </Link>
                             </li>
                           ))}
                         </ul>
@@ -810,12 +840,12 @@ const Header = () => {
                     <ul className="space-y-3">
                       {successStoriesMenu.map((item, idx) => (
                         <li key={idx}>
-                          <a
-                            href="#"
+                          <Link
+                            to={"/" + item.toLowerCase().replace(/\s+/g, "")}
                             className="text-sm hover:text-blue-500 transition-colors block"
                           >
                             {item}
-                          </a>
+                          </Link>
                         </li>
                       ))}
                     </ul>
@@ -894,12 +924,12 @@ const Header = () => {
             <ul className="space-y-4">
               {hamburgerMenuItems.map((item, idx) => (
                 <li key={idx}>
-                  <a
-                    href="#"
+                  <Link
+                    to={"/" + item.toLowerCase().replace(/\s+/g, "")}
                     className="text-sm hover:text-blue-500 transition-colors block"
                   >
                     {item}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -932,9 +962,12 @@ const Header = () => {
                     <ul className="space-y-2">
                       {servicesMenu.items.map((item, idx) => (
                         <li key={idx}>
-                          <a href="#" className="text-xs block py-1">
+                          <Link
+                            to={"/" + item.toLowerCase().replace(/\s+/g, "")}
+                            className="text-xs block py-1"
+                          >
                             {item}
-                          </a>
+                          </Link>
                         </li>
                       ))}
                     </ul>
@@ -946,9 +979,12 @@ const Header = () => {
                     <ul className="space-y-2">
                       {enterpriseMenu.items.map((item, idx) => (
                         <li key={idx}>
-                          <a href="#" className="text-xs block py-1">
+                          <Link
+                            to={"/" + item.toLowerCase().replace(/\s+/g, "")}
+                            className="text-xs block py-1"
+                          >
                             {item}
-                          </a>
+                          </Link>
                         </li>
                       ))}
                     </ul>
@@ -974,9 +1010,12 @@ const Header = () => {
                   <ul className="space-y-2">
                     {cloudMenu.map((item, idx) => (
                       <li key={idx}>
-                        <a href="#" className="text-xs block py-1">
+                        <Link
+                          to={"/" + item.toLowerCase().replace(/\s+/g, "")}
+                          className="text-xs block py-1"
+                        >
                           {item}
-                        </a>
+                        </Link>
                       </li>
                     ))}
                   </ul>
@@ -1005,9 +1044,12 @@ const Header = () => {
                     <ul className="space-y-2">
                       {dataAiMenu.data.items.map((item, idx) => (
                         <li key={idx}>
-                          <a href="#" className="text-xs block py-1">
+                          <Link
+                            to={"/" + item.toLowerCase().replace(/\s+/g, "")}
+                            className="text-xs block py-1"
+                          >
                             {item}
-                          </a>
+                          </Link>
                         </li>
                       ))}
                     </ul>
@@ -1019,9 +1061,12 @@ const Header = () => {
                     <ul className="space-y-2">
                       {dataAiMenu.ai.items.map((item, idx) => (
                         <li key={idx}>
-                          <a href="#" className="text-xs block py-1">
+                          <Link
+                            to={"/" + item.toLowerCase().replace(/\s+/g, "")}
+                            className="text-xs block py-1"
+                          >
                             {item}
-                          </a>
+                          </Link>
                         </li>
                       ))}
                     </ul>
@@ -1047,9 +1092,12 @@ const Header = () => {
                   <ul className="space-y-2">
                     {securityMenu.map((item, idx) => (
                       <li key={idx}>
-                        <a href="#" className="text-xs block py-1">
+                        <Link
+                          to={"/" + item.toLowerCase().replace(/\s+/g, "")}
+                          className="text-xs block py-1"
+                        >
                           {item}
-                        </a>
+                        </Link>
                       </li>
                     ))}
                   </ul>
@@ -1074,9 +1122,12 @@ const Header = () => {
                   <ul className="space-y-2">
                     {industriesMenu.map((item, idx) => (
                       <li key={idx}>
-                        <a href="#" className="text-xs block py-1">
+                        <Link
+                          to={"/" + item.name.toLowerCase().replace(/\s+/g, "")}
+                          className="text-xs block py-1"
+                        >
                           {item.name}
-                        </a>
+                        </Link>
                       </li>
                     ))}
                   </ul>
@@ -1112,9 +1163,12 @@ const Header = () => {
                     <ul className="space-y-2">
                       {technologiesMenu.mobileApps.items.map((item, idx) => (
                         <li key={idx}>
-                          <a href="#" className="text-xs block py-1">
+                          <Link
+                            to={"/" + item.toLowerCase().replace(/\s+/g, "")}
+                            className="text-xs block py-1"
+                          >
                             {item}
-                          </a>
+                          </Link>
                         </li>
                       ))}
                     </ul>
@@ -1140,9 +1194,12 @@ const Header = () => {
                   <ul className="space-y-2">
                     {successStoriesMenu.map((item, idx) => (
                       <li key={idx}>
-                        <a href="#" className="text-xs block py-1">
+                        <Link
+                          to={"/" + item.toLowerCase().replace(/\s+/g, "")}
+                          className="text-xs block py-1"
+                        >
                           {item}
-                        </a>
+                        </Link>
                       </li>
                     ))}
                   </ul>
